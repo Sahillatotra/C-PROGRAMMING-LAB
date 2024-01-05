@@ -1,12 +1,21 @@
 #include <stdio.h>
-void main(){
-  int i,f=1,num;
-
-  printf("Input the number : ");
-  scanf("%d",&num);
-
-  for(i=1;i<=num;i++)
-      f=f*i;
-
-  printf("The Factorial of %d is: %d\n",num,f);
+int factorial(int num) 
+{
+    if (num == 0) {
+        return 1;
+    } else {
+        return num*factorial(num-1);
+    }
+}
+int main() {
+    int num;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    if (num < 0) 
+    {
+        printf("Invalid input\n");
+    } else {
+        printf("Factorial of %d: %d\n",num,factorial(num));
+    }
+    return 0;
 }

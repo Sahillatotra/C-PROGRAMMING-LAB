@@ -1,16 +1,14 @@
-#include <stdio.h>
+#include<stdio.h>
+void main()
+{
+int i,j;
+printf("enter the j value");
+scanf("%d",&j);
 
-int main() {
-    int a,b;
-    printf("enter the number:\n,enter the limit:");
-     scanf("%d%d",&a,&b);
-    printf("Multiplication Table of %d\n",a);
-    printf("-----------------------------\n");
-
-    for (int i = 1; i <= b; i++) {
-        printf("%d x %d = %d\n", i, a, i * a);
-    }
-
-    return 0;
-}
+for( i=1;i<=2*j+1;++i){
+ printf("%d\n",i);
     
+}
+
+
+}
